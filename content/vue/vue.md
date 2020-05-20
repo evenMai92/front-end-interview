@@ -168,7 +168,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：腾讯
 </details>
 
-<b><details><summary>12. 怎么根据url后面参数变化(?xx=xx)，刷新当前页面数据？</summary></b>
+<b><details><summary>13. 怎么根据url后面参数变化(?xx=xx)，刷新当前页面数据？</summary></b>
 答案：
 
 1. 监听$route变化，并请求新的数据；
@@ -180,7 +180,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：腾讯
 </details>
 
-<b><details><summary>13. $route和$router的区别？</summary></b>
+<b><details><summary>14. $route和$router的区别？</summary></b>
 答案：
 
 1. $route是一个跳转的路由对象，每一个路由都会有一个route对象，是一个局部的对象，可以获取对应的name,path,params,query等;
@@ -192,7 +192,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：顺丰科技
 </details>
 
-<b><details><summary>13. keep-alive有啥作用，跟keep-alive有关的生命周期有哪些？</summary></b>
+<b><details><summary>15. keep-alive有啥作用，跟keep-alive有关的生命周期有哪些？</summary></b>
 答案：
 
 1. <keep-alive>是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM；
@@ -204,7 +204,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：顺丰科技
 </details>
 
-<b><details><summary>14. vue父子组件生命周期的执行顺序？</summary></b>
+<b><details><summary>16. vue父子组件生命周期的执行顺序？</summary></b>
 答案：
 
 1. 加载渲染过程
@@ -221,7 +221,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：腾讯
 </details>
 
-<b><details><summary>15. 比较react与vue？</summary></b>
+<b><details><summary>17. 比较react与vue？</summary></b>
 答案：
 
 1. 相同点
@@ -243,7 +243,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：顺丰科技
 </details>
 
-<b><details><summary>15. react diff与vue diff的区别？</summary></b>
+<b><details><summary>18. react diff与vue diff的区别？</summary></b>
 答案：
 1. react diff过程
 ![react-diff](../images/react-diff.webp)
@@ -255,7 +255,7 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 公司：顺丰科技
 </details>
 
-<b><details><summary>16. vue组件懒加载有几种方式，区别是什么？</summary></b>
+<b><details><summary>19. vue组件懒加载有几种方式，区别是什么？</summary></b>
 答案：
 
 1. es6
@@ -297,7 +297,7 @@ let Workbench = (resolve) => {
 公司：顺丰科技
 </details>
 
-<b><details><summary>17. vuex原理及有哪些属性？</summary></b>
+<b><details><summary>20. vuex原理及有哪些属性？</summary></b>
 答案：
 
 1. vuex 整体思想诞生于 flux,可其的实现方式完完全全的使用了 vue 自身的响应式设计，依赖监听、依赖收集都属于 vue 对对象 Property set get 方法的代理劫持。最后一句话结束 vuex 工作原理，vuex 中的 store 本质就是没有 template 的隐藏着的 vue 组件；
@@ -309,7 +309,7 @@ let Workbench = (resolve) => {
 公司：顺丰科技
 </details>
 
-<b><details><summary>18. v-if和v-show的区别？</summary></b>
+<b><details><summary>21. v-if和v-show的区别？</summary></b>
 答案：
 
 1. v-show本质就是标签display设置为none，控制隐藏
@@ -321,7 +321,7 @@ let Workbench = (resolve) => {
 公司：有赞
 </details>
 
-<b><details><summary>19. watch和computed区别？</summary></b>
+<b><details><summary>22. watch和computed区别？</summary></b>
 答案：
 
 1. computed是计算值，具有缓存性，页面重新渲染值不变化,计算属性会立即返回之前的计算结果，而不必再次执行函数；
@@ -333,7 +333,7 @@ let Workbench = (resolve) => {
 公司：有赞
 </details>
 
-<b><details><summary>20. v-model的原理？</summary></b>
+<b><details><summary>23. v-model的原理？</summary></b>
 答案：
 
 v-model本质上就是语法糖，即利用v-model绑定数据后，其实就是既绑定了数据，又添加了一个input事件监听
@@ -343,7 +343,7 @@ v-model本质上就是语法糖，即利用v-model绑定数据后，其实就是
 公司：快手
 </details>
 
-<b><details><summary>20. proxy与defineProperty对比？</summary></b>
+<b><details><summary>24. proxy与defineProperty对比？</summary></b>
 答案：
 
 [详解](https://www.jianshu.com/p/860418f0785c)
@@ -351,7 +351,7 @@ v-model本质上就是语法糖，即利用v-model绑定数据后，其实就是
 公司：有赞
 </details>
 
-<b><details><summary>21. vue 父组件监听子组件生命周期？</summary></b>
+<b><details><summary>25. vue 父组件监听子组件生命周期？</summary></b>
 答案：
 
 1. 使用on和emit;
