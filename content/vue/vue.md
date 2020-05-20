@@ -7,6 +7,8 @@
 
 2. 组建中的data写成一个函数，数据以函数返回值的形式定义，这样每次复用组件的时候，都会返回一份新的data，相当于每个组件实例都有自己私有的数据空间，它们只负责各自维护的数据，不会造成混乱
 
+[详解](https://axiu.me/coding/why-vue-component-data-must-be-function/)
+
 公司：字节跳动
 </details>
 
@@ -19,6 +21,8 @@
 ![vue新增属性原理](../images/vue新增属性原理.jpg)
 
 3. vue3.0将数据劫持原理由defineProperty改为Proxy，优化对对象进行递归设置拦截，同时还能监听数组和新增属性变化，唯一不好，就是兼容性问题；
+
+[详解](https://www.cnblogs.com/goloving/p/10986120.html)
 
 公司：腾讯
 </details>
@@ -33,10 +37,12 @@
 
 3. 将与元素唯一对应的值作为key，可以最大化利用dom节点，提升性能
 
+[详解](https://www.cnblogs.com/youhong/p/11327062.html)
+
 公司：字节跳动、腾讯
 </details>
 
-<b><details><summary>4. vue为什么用vdom，vdom一定会提升性能吗，vue为什么要使用它?</summary></b>
+<b><details><summary>4. vue为什么用vdom，vdom一定会提升性能吗?</summary></b>
 答案：
 
 Vue 之所以引入了 Virtual DOM，更重要的原因是为了解耦 HTML 依赖，这带来两个非常重要的好处是：
@@ -71,6 +77,8 @@ Vue 之所以引入了 Virtual DOM，更重要的原因是为了解耦 HTML 依�
 5. 更容易使用
 - 改进的TypeScript支持，编辑器能提供强有力的类型检查和错误及警告
 
+[详解](https://juejin.im/post/5ea1c1cae51d4546ff700c80?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com)
+
 公司：金蝶科技
 </details>
 
@@ -85,6 +93,8 @@ Vue 之所以引入了 Virtual DOM，更重要的原因是为了解耦 HTML 依�
 6. $parent;
 7. Vuex;
 
+[详解](https://juejin.im/post/5bd18c72e51d455e3f6e4334)
+
 公司：金蝶科技、微众
 </details>
 
@@ -94,5 +104,282 @@ Vue 之所以引入了 Virtual DOM，更重要的原因是为了解耦 HTML 依�
 1. EventBus;
 2. Vuex;
 
+[详解](https://segmentfault.com/a/1190000008042320)
+
 公司：腾讯
+</details>
+
+<b><details><summary>8. Vue.nextTick原理及使用场景？</summary></b>
+答案：
+
+* vue 是异步执行 dom 更新的，一旦观察到数据变化，Vue 就会开启一个队列，然后把在同一个事件循环 (event loop) 当中观察到数据变化的 watcher 推送进这个队列。
+* 如果这个 watcher 被触发多次，只会被推送到队列一次。这种缓冲行为可以有效的去掉重复数据造成的不必要的计算和 DOm 操作。而在下一个事件循环时，Vue 会清空队列，并进行必要的 DOM 更新。 
+* 当你设置 vm.someData = 'new value'，DOM 并不会马上更新，而是在异步队列被清除，也就是下一个事件循环开始时执行更新时才会进行必要的 DOM 更新。如果此时你想要根据更新的 DOM 状态去做某些事情，就会出现问题。
+* 为了在数据变化之后等待 Vue 完成更新 DOM ，可以在数据变化之后立即使用 Vue.nextTick(callback)
+
+[详解](https://segmentfault.com/a/1190000013314893)
+
+公司：虎牙、顺丰科技
+</details>
+
+<b><details><summary>9. vue-router原理，有几种模式，有什么区别？</summary></b>
+答案：
+
+1. hash模式：在浏览器中符号“#”，#以及#后面的字符称之为hash，用window.location.hash读取；
+特点：hash虽然在URL中，但不被包括在HTTP请求中；用来指导浏览器动作，对服务端安全无用，hash不会重加载页面。
+hash 模式下，仅 hash 符号之前的内容会被包含在请求中，如 http://www.xxx.com，因此对于后端来说，即使没有做到对路由的全覆盖，也不会返回 404 错误。
+
+2. history模式：history采用HTML5的新特性；且提供了两个新方法：pushState（），replaceState（）可以对浏览器历史记录栈进行修改，以及popState事件的监听到状态变更。
+history 模式下，前端的 URL 必须和实际向后端发起请求的 URL 一致，如 http://www.xxx.com/items/id。后端如果缺少对 /items/id 的路由处理，将返回 404 错误。
+
+3. abstract模式：支持所有 JavaScript 运行环境，如 Node.js 服务器端；
+
+[详解](https://juejin.im/post/5bc6eb875188255c9c755df2#heading-2)
+
+公司：金蝶科技
+</details>
+
+<b><details><summary>10. vue响应式原理</summary></b>
+答案：
+![vue响应式](../images/vue响应式.png)
+
+[详解](https://zhuanlan.zhihu.com/p/88648401)
+
+公司：金蝶科技、微众
+</details>
+
+<b><details><summary>11. vue怎么自定义指令？</summary></b>
+答案：
+
+[详解](https://cn.vuejs.org/v2/guide/custom-directive.html#ad)
+
+公司：腾讯
+</details>
+
+<b><details><summary>12. vue中获取dom节点的方法有哪些？</summary></b>
+答案：
+
+1. ref属性
+
+2. DOM API
+
+[详解](https://www.jianshu.com/p/3aeaa3cc6114)
+
+公司：腾讯
+</details>
+
+<b><details><summary>12. 怎么根据url后面参数变化(?xx=xx)，刷新当前页面数据？</summary></b>
+答案：
+
+1. 监听$route变化，并请求新的数据；
+
+2. 进入组件路由钩子beforeRouteEnter或beforeRouteUpdate时，根据跳转参数的变化请求新的数据；
+
+3. created生命周期后，可以通过this.$route取到query参数，并请求新的数据；
+
+公司：腾讯
+</details>
+
+<b><details><summary>13. $route和$router的区别？</summary></b>
+答案：
+
+1. $route是一个跳转的路由对象，每一个路由都会有一个route对象，是一个局部的对象，可以获取对应的name,path,params,query等;
+
+2. $router是VueRouter的一个对象，通过Vue.use(VueRouter)和VueRouter构造函数得到一个router的实例对象，这个对象中是一个全局的对象，他包含了所有的路由包含了许多关键的对象和属性;
+
+[详解](https://segmentfault.com/a/1190000009392552)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>13. keep-alive有啥作用，跟keep-alive有关的生命周期有哪些？</summary></b>
+答案：
+
+1. <keep-alive>是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM；
+
+2. <keep-alive>组件激活时触发activated，被停用时触发deactivated；
+
+[详解](https://www.cnblogs.com/goloving/p/9256212.html)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>14. vue父子组件生命周期的执行顺序？</summary></b>
+答案：
+
+1. 加载渲染过程
+* 父beforeCreate->父created->父beforeMount->子beforeCreate->子created->子beforeMount->子mounted->父mounted
+
+2. 子组件更新过程
+* 父beforeUpdate->子beforeUpdate->子updated->父updated
+
+3. 父组件更新过程
+* 父beforeUpdate->父updated
+
+[详解](https://www.rokub.com/63657.html)
+
+公司：腾讯
+</details>
+
+<b><details><summary>15. 比较react与vue？</summary></b>
+答案：
+
+1. 相同点
+* 都有组件化开发和Virtual DOM
+* 都支持props进行父子组件间数据通信
+* 都支持数据驱动视图, 不直接操作真实DOM, 更新状态数据界面就自动更新
+* 都支持服务器端渲染
+* 都有支持native的方案,React的React Native,Vue的Weex
+
+2. 不同点
+* 数据绑定: vue实现了数据的双向绑定,react数据流动是单向的
+* 组件写法不一样, React推荐的做法是 JSX , 也就是把HTML和CSS全都写进JavaScript了,即'all in js'; Vue推荐的做法是webpack+vue-loader的单文件组件格式,即html,css,js写在同一个文件
+* state对象在react应用中不可变的,需要使用setState方法更新状态;在vue中,state对象不是必须的,数据由data属性在vue对象中管理
+* virtual DOM不一样,vue会跟踪每一个组件的依赖关系,不需要重新渲染整个组件树.而对于React而言,每当应用的状态被改变时,全部组件都会重新渲染,所以react中会需要shouldComponentUpdate这个生命周期函数方法来进行控制
+* React严格上只针对MVC的view层,Vue则是MVVM模式
+
+[详解](https://www.cnblogs.com/yubin-/p/11537122.html)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>15. react diff与vue diff的区别？</summary></b>
+答案：
+1. react diff过程
+![react-diff](../images/react-diff.webp)
+2. vue diff过程
+![vue-diff](../images/vue-diff.webp)
+
+[详解](https://www.jianshu.com/p/398e63dc1969)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>16. vue组件懒加载有几种方式，区别是什么？</summary></b>
+答案：
+
+1. es6
+```javascript
+var A = () => import('./A');
+```
+2. commonjs
+```javascript
+var B = (resolve) => require(['./B'], resolve);
+```
+3. commonjs
+```javascript
+var C = ( resolve ) => {
+  return require.ensure([], () => {
+    resolve(require( './C' ))
+  })
+}
+```
+### 区别：
+1. require是有webpack社区提供方案，import为es6官方提供；
+2. 使用require方式可以将多个模块js组合分割打包，require下面方法ensure第一个参数是依赖，如果不需要请写[]（空数组）,而import只能将每个模块独立打包成一个js文件；也就是说，如果现在有三个导航A、B、C，你现在用require可以将A单独分割出来做懒加载，进入a模块只请求A，B和C你可以组合在一起进行分割，进入B和C将加载共同一个文件；
+  例如：
+```javascript
+let Doc = (resolve) => {
+  return require.ensure([], () => {
+    resolve(require('@/views/backend/doc'))
+  }, "abc")
+}*//*
+let Workbench = (resolve) => {
+  return require.ensure([], () => {
+    resolve(require('@/views/backend/workbench'))
+  }, "abc")
+}
+```
+3. 如上例子，最后一个参数'abc'名称就是进行匹配哪几个文件打包在一起加载
+
+[详解](https://www.zhihu.com/question/20215561)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>17. vuex原理及有哪些属性？</summary></b>
+答案：
+
+1. vuex 整体思想诞生于 flux,可其的实现方式完完全全的使用了 vue 自身的响应式设计，依赖监听、依赖收集都属于 vue 对对象 Property set get 方法的代理劫持。最后一句话结束 vuex 工作原理，vuex 中的 store 本质就是没有 template 的隐藏着的 vue 组件；
+
+2. 解析：vuex的原理其实非常简单，它为什么能实现所有的组件共享同一份数据？ 因为vuex生成了一个store实例，并且把这个实例挂在了所有的组件上，所有的组件引用的都是同一个store实例。 store实例上有数据，有方法，方法改变的都是store实例上的数据。由于其他组件引用的是同样的实例，所以一个组件改变了store上的数据， 导致另一个组件上的数据也会改变，就像是一个对象的引用；
+
+3. 属性state、action、mutation、module、getter
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>18. v-if和v-show的区别？</summary></b>
+答案：
+
+1. v-show本质就是标签display设置为none，控制隐藏
+
+2. v-if是动态的向DOM树内添加或者删除DOM元素
+
+[详解](https://cn.vuejs.org/v2/guide/conditional.html#v-if-vs-v-show)
+
+公司：有赞
+</details>
+
+<b><details><summary>19. watch和computed区别？</summary></b>
+答案：
+
+1. computed是计算值，具有缓存性，页面重新渲染值不变化,计算属性会立即返回之前的计算结果，而不必再次执行函数；
+
+2. watch是观察的动作，无缓存性，数据变化后执行回调；
+
+[详解](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#computed)
+
+公司：有赞
+</details>
+
+<b><details><summary>20. v-model的原理？</summary></b>
+答案：
+
+v-model本质上就是语法糖，即利用v-model绑定数据后，其实就是既绑定了数据，又添加了一个input事件监听
+
+[详解](https://www.zhangjinglin.cn/blog/d34df6d79dfcdb9efae75e36d78b62b657.html)
+
+公司：快手
+</details>
+
+<b><details><summary>20. proxy与defineProperty对比？</summary></b>
+答案：
+
+[详解](https://www.jianshu.com/p/860418f0785c)
+
+公司：有赞
+</details>
+
+<b><details><summary>21. vue 父组件监听子组件生命周期？</summary></b>
+答案：
+
+1. 使用on和emit;
+```javascript
+// Parent.vue
+<Child @mounted="doSomething"/>
+
+// Child.vue
+mounted() {
+  this.$emit("mounted");
+}
+```
+2. hook钩子函数;
+```javascript
+//  Parent.vue
+<Child @hook:mounted="doSomething" ></Child>
+
+doSomething() {
+   console.log('父组件监听到 mounted 钩子函数 ...');
+}
+    
+//  Child.vue
+mounted(){
+   console.log('子组件触发 mounted 钩子函数 ...');
+}
+```
+
+[详解](https://www.cnblogs.com/mengfangui/p/12546866.html)
+
+公司：有赞
 </details>
