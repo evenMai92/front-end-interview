@@ -1,5 +1,5 @@
 # [返回主页](https://github.com/evenMai92/front-end-interview/blob/master/README.md)
-### [源码阅读](https://ustbhuangyi.github.io/vue-analysis/)
+### [vue相关源码解析](https://ustbhuangyi.github.io/vue-analysis/)
 
 <b><details><summary>1. Vue的实例和组件为什么data书写不一样</summary></b>
 答案：
@@ -196,9 +196,9 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 <b><details><summary>15. keep-alive有啥作用，跟keep-alive有关的生命周期有哪些？</summary></b>
 答案：
 
-1. <keep-alive>是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM；
+1. \<keep-alive\>是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM；
 
-2. <keep-alive>组件激活时触发activated，被停用时触发deactivated；
+2. \<keep-alive\>组件激活时触发activated，被停用时触发deactivated；
 
 [详解](https://www.cnblogs.com/goloving/p/9256212.html)
 
@@ -330,9 +330,11 @@ let Workbench = (resolve) => {
 <b><details><summary>22. watch和computed区别？</summary></b>
 答案：
 
-1. computed是计算值，具有缓存性，页面重新渲染值不变化,计算属性会立即返回之前的计算结果，而不必再次执行函数；
+* computed是计算值，具有缓存性，页面重新渲染值不变化,计算属性会立即返回之前的计算结果，而不必再次执行函数；
+* computed不支持异步，当computed内有异步操作时无效，无法监听数据的变化；
 
-2. watch是观察的动作，无缓存性，数据变化后执行回调；
+* watch是观察的动作，无缓存性，数据变化后执行回调；
+* watch支持异步；
 
 [详解](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#computed)
 
