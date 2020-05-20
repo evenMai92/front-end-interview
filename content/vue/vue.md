@@ -1,4 +1,5 @@
 # [返回主页](https://github.com/evenMai92/front-end-interview/blob/master/README.md)
+### [源码阅读](https://ustbhuangyi.github.io/vue-analysis/)
 
 <b><details><summary>1. Vue的实例和组件为什么data书写不一样</summary></b>
 答案：
@@ -246,8 +247,11 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 <b><details><summary>18. react diff与vue diff的区别？</summary></b>
 答案：
 1. react diff过程
+
 ![react-diff](../images/react-diff.webp)
+
 2. vue diff过程
+
 ![vue-diff](../images/vue-diff.webp)
 
 [详解](https://www.jianshu.com/p/398e63dc1969)
@@ -305,6 +309,8 @@ let Workbench = (resolve) => {
 2. 解析：vuex的原理其实非常简单，它为什么能实现所有的组件共享同一份数据？ 因为vuex生成了一个store实例，并且把这个实例挂在了所有的组件上，所有的组件引用的都是同一个store实例。 store实例上有数据，有方法，方法改变的都是store实例上的数据。由于其他组件引用的是同样的实例，所以一个组件改变了store上的数据， 导致另一个组件上的数据也会改变，就像是一个对象的引用；
 
 3. 属性state、action、mutation、module、getter
+
+[详解](http://www.imooc.com/article/291242)
 
 公司：顺丰科技
 </details>
@@ -382,4 +388,20 @@ mounted(){
 [详解](https://www.cnblogs.com/mengfangui/p/12546866.html)
 
 公司：有赞
+</details>
+
+<b><details><summary>26. vue怎么做页面权限控制？</summary></b>
+
+答案：利用 vue-router 的 全局钩子beforeEach或路由钩子beforeRouteEnter，可以在跳转页面前判断用户的权限（利用权限菜单列表），是否能够进入此页面，如果不能则提示错误或重定向到上一个页面。
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>26. 作用域插槽的使用</summary></b>
+
+答案：
+
+[详解](https://cn.vuejs.org/v2/guide/components-slots.html#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD)
+
+公司：腾讯
 </details>
