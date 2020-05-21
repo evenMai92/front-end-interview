@@ -7,6 +7,14 @@
 2.[参考](https://github.com/yisainan/web-interview)
 </details>
 
+<b><details><summary>Js</summary></b>
+- [详情](./content/js/js.md)
+</details>
+
+<b><details><summary>编程题</summary></b>
+- [详情](./content/编程题/编程题.md)
+</details>
+
 <b><details><summary>Vue</summary></b>
 - [详情](./content/vue/vue.md)
 </details>
