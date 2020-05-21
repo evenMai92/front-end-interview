@@ -148,3 +148,40 @@ FileReader.readAsText()
 
 公司：顺丰科技
 </details>
+
+<b><details><summary>12. js实现继承有哪些，最好的是哪个(寄生组合继承)?</summary></b>
+答案：
+[详解](https://www.cnblogs.com/Leophen/p/11401734.html)
+
+公司：顺丰科技，字节跳动
+</details>
+
+<b><details><summary>13. 正则非贪婪模式怎么写?</summary></b>
+答案：
+```javascript
+// 默认贪婪 ["ass", "111", "2"]
+'ass1112'.match(/\w{1,3}/g)
+
+// 非贪婪 ["a", "s", "s", "1", "1", "1", "2"]
+'ass1112'.match(/\w{1,3}?/g)
+```
+公司：腾讯
+</details>
+
+<b><details><summary>14. 普通函数与箭头函数的区别?</summary></b>
+答案：
+* 箭头函数是匿名函数，不能作为构造函数，不能使用new；
+* 箭头函数不绑定arguments，取而代之用rest参数...解决；
+* this的作用域不同，箭头函数不绑定this，会捕获其所在的上下文的this值，作为自己的this值；
+* 箭头函数没有原型属性；
+* 箭头函数不能当做Generator函数,不能使用yield关键字；
+
+公司：腾讯
+</details>
+
+<b><details><summary>15. async/await与generator的关系?</summary></b>
+答案：
+[详解](https://segmentfault.com/a/1190000022270916)
+
+公司：腾讯
+</details>
