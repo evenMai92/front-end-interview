@@ -1,1 +1,150 @@
 # [返回主页](https://github.com/evenMai92/front-end-interview/blob/master/README.md)
+
+<b><details><summary>1. Object.__proto__值为什么?</summary></b>
+答案：
+
+Object.__proto__ = Function.prototype;
+
+![原型](../images/原型.png)
+
+公司：字节跳动
+</details>
+
+<b><details><summary>2. js数组方法有哪些，可以分为几类，es6新增哪些方法?</summary></b>
+答案：
+
+1. 改变原始数组
+* push()
+* pop()
+* shift()
+* unshift()
+* splice()
+* sort()
+* reverse()
+* forEach()
+* copyWithin(es6新增)
+* fill(es6新增)
+
+2. 不改变原始数组
+* filter()
+* concat() 
+* slice()
+* map()
+* some()
+* every()
+* reduce()
+* reduceRight()
+* find()与findIndex()(es6新增)
+* includes(es7新增)
+
+3. 生成数组
+* Array.of方法创建数组(es6新增)
+* Array.from方法创建数组(es6新增)
+
+[详解](https://www.cnblogs.com/xzsty/p/10304649.html)
+
+公司：字节跳动，搜狐
+</details>
+
+<b><details><summary>3. canvas与svg的区别?</summary></b>
+答案：
+
+* SVG 是一种使用 XML 描述 2D 图形的语言。
+* SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。
+* 在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。
+
+* Canvas 通过 JavaScript 来绘制 2D 图形。
+* Canvas 是逐像素进行渲染的。
+* 在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。
+
+公司：金蝶科技
+</details>
+
+<b><details><summary>4. 事件循环</summary></b>
+答案：
+1. 所有的任务可以分为同步任务和异步任务，同步和异步任务分别进入不同的执行环境，同步的进入主线程，即主执行栈，异步的进入 Event Queue 。主线程内的任务执行完毕为空，会去 Event Queue 读取对应的任务，推入主线程执行。 上述过程的不断重复就是我们说的 Event Loop (事件循环)。
+
+2. (macro)task 主要包含：script( 整体代码)、setTimeout、setInterval、I/O、UI 交互事件、setImmediate(Node.js 环境)
+
+3. microtask主要包含：Promise、MutaionObserver、process.nextTick(Node.js 环境)，Object.observe
+
+[详解](https://segmentfault.com/a/1190000012925872#articleHeader17)
+
+公司：金蝶科技
+</details>
+
+<b><details><summary>5. setTimeout和requestAnimationFrame的区别?</summary></b>
+答案：
+1. setTimeout
+* 间隔时间不精确，可能被阻塞。计时器的间隔指的是将回调函数推入任务队列的间隔时间，任务队列中的任务只有在主线程任务执行完毕后才会被执行。
+* 计时器动画的间隔时间如果设定过短就会出现过度渲染占用大量资源，如果设定过长就会影响动画的流畅度。只能够估计合适的时间间隔。
+* 多数浏览器对于计时器动画没有优化。
+2. requestAnimationFrame
+* requestAnimationFrame 动画的帧数是由系统根据当前页面是否可见，CPU 的占用情况等等来决定的，可以最大化地利用系统性能。
+* 浏览器对 requestAnimationFrame 动画进行了优化。
+
+[详解](https://segmentfault.com/a/1190000021927175)
+公司：金蝶科技
+</details>
+
+<b><details><summary>6. 客户端有哪些方法读取到blob数据?</summary></b>
+答案：
+```javascript
+FileReader.readAsArrayBuffer()
+开始读取指定的 Blob中的内容, 一旦完成, result 属性中保存的将是被读取文件的 ArrayBuffer 数据对象.
+FileReader.readAsBinaryString() 
+开始读取指定的Blob中的内容。一旦完成，result属性中将包含所读取文件的原始二进制数据。
+FileReader.readAsDataURL()
+开始读取指定的Blob中的内容。一旦完成，result属性中将包含一个data: URL格式的Base64字符串以表示所读取文件的内容。
+FileReader.readAsText()
+开始读取指定的Blob中的内容。一旦完成，result属性中将包含一个字符串以表示所读取的文件内容。
+```
+公司：金蝶科技
+</details>
+
+<b><details><summary>7. 跨域解决方案?</summary></b>
+答案：
+* 通过jsonp跨域
+* document.domain + iframe跨域
+* location.hash + iframe
+* window.name + iframe跨域
+* postMessage跨域
+* 跨域资源共享（CORS）
+* nginx代理跨域
+* nodejs中间件代理跨域
+* WebSocket协议跨域
+
+[详解](http://www.imooc.com/article/291931)
+
+公司：金蝶科技,顺丰科技
+</details>
+
+<b><details><summary>8. cookie,sessionStorage,localStorage的区别?</summary></b>
+答案：
+![浏览器存储](../images/浏览器存储.JPG)
+
+[详解](https://www.jianshu.com/p/bf94eecc9ede)
+
+公司：金蝶科技
+</details>
+
+<b><details><summary>9. 深拷贝对象(递归拷贝怎么避免循环引用)?</summary></b>
+答案：
+[详解](https://www.jianshu.com/p/b08bc61714c7)
+
+公司：腾讯
+</details>
+
+<b><details><summary>10. js垃圾回收机制</summary></b>
+答案：
+[详解](https://segmentfault.com/a/1190000018605776?utm_source=tag-newest)
+
+公司：腾讯
+</details>
+
+<b><details><summary>11. 什么是原型和原型链?</summary></b>
+答案：
+[详解](https://www.jianshu.com/p/5e62dc7349e9)
+
+公司：顺丰科技
+</details>
