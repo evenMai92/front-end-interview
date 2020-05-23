@@ -176,12 +176,80 @@ FileReader.readAsText()
 * 箭头函数没有原型属性；
 * 箭头函数不能当做Generator函数,不能使用yield关键字；
 
+[详解](https://www.softwhy.com/article-9330-1.html)
+
 公司：腾讯
 </details>
 
 <b><details><summary>15. async/await与generator的关系?</summary></b>
 答案：
 [详解](https://segmentfault.com/a/1190000022270916)
+
+公司：腾讯
+</details>
+
+<b><details><summary>16. axios原理，以及ajax和fetch的区别?</summary></b>
+答案：
+```javascript
+// 适配器，客户端用xhr,服务端用http
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = require('./adapters/xhr');
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = require('./adapters/http');
+  }
+  return adapter;
+}
+```
+
+1. fetch
+* fetch是基于promise实现的，也可以结合async/await。
+* fetch请求默认是不带cookie的，需要设置fetch（URL，{credentials:’include’})。
+Credentials有三种参数：same-origin，include，*
+* 服务器返回400 500 状态码时并不会reject，只有网络出错导致请求不能完成时，fetch才会被reject。
+* 所有版本的 IE 均不支持原生 Fetch。
+* fetch是widow的一个方法；
+* fetch不支持abort，不支持超时控制，使用setTimeout及Promise.reject的实现的超时控制并不能阻止请求过程继续在后台运行，造成了量的浪费
+* fetch没有办法原生监测请求的进度
+2. ajax
+* 是XMLHTTPRequest的一个实例；
+* 只有当状态为200或者304时才会请求成功;
+* 支持abort,支持超时控制，还可以监听请求的进度；
+
+公司：金蝶科技
+</details>
+
+<b><details><summary>17. 单元测试工具jest原理是什么？怎么计算覆盖率？</summary></b>
+答案：
+
+公司：腾讯
+</details>
+
+<b><details><summary>18. ts相比js最重要的特性？</summary></b>
+答案：静态类型分析
+
+公司：有赞云
+</details>
+
+<b><details><summary>19. JavaScript异步加载的几种方式？</summary></b>
+答案： 
+
+[详解](https://blog.csdn.net/zhouziyu2011/article/details/60149590)
+
+公司：字节跳动
+</details>
+
+<b><details><summary>20. 查找需要性能优化的代码段，以及老版本浏览器查找要优化的代码段？</summary></b>
+答案： 
+
+公司：腾讯
+</details>
+
+<b><details><summary>21. 前端代码线上环境运行状态监控?</summary></b>
+答案： sentry.io
 
 公司：腾讯
 </details>
