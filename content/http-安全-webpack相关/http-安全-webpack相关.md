@@ -1,0 +1,77 @@
+# [返回主页](https://github.com/evenMai92/front-end-interview/blob/master/README.md)
+
+<b><details><summary>1. http是什么，请求报文有哪些?</summary></b>
+答案：
+
+1. http(Hypertext transfer protocol)超文本传输协议，通过浏览器和服务器进行数据交互，进行超文本（文本、图片、视频等）传输的规定。也就是说，http协议规定了超文本传输所要遵守的规则；HTTP协议的特点：
+* HTTP协议是无状态的
+* HTTP协议是无连接的
+* HTTP是媒体独立的
+
+2.请求报文包含请求行、请求头和请求体
+
+[详解](https://www.cnblogs.com/lmh001/p/9928517.html)
+
+公司：金蝶科技、腾讯
+</details>
+
+<b><details><summary>2. http缓存?</summary></b>
+答案：
+[详解](https://www.jianshu.com/p/54cc04190252)
+
+公司：金蝶科技、腾讯、阿里
+</details>
+
+<b><details><summary>3. http1.0、http1.1和http2的区别?</summary></b>
+答案：
+[详解](https://www.cnblogs.com/heluan/p/8620312.html)
+
+公司：金蝶科技
+</details>
+
+<b><details><summary>4. web安全漏洞及防御?</summary></b>
+答案：
+[详解](https://www.cnblogs.com/fundebug/p/details-about-6-web-security.html)
+
+公司：腾讯
+</details>
+
+<b><details><summary>5. 使用token的话，过期之后怎么办，怎么优化体验?</summary></b>
+答案：
+[详解1](https://zhuanlan.zhihu.com/p/54598246)
+[详解2](https://segmentfault.com/a/1190000016946316)
+
+公司：腾讯，顺丰科技
+</details>
+
+<b><details><summary>6. babel转es6为es5的过程?</summary></b>
+答案：
+>ES6代码输入 ==》 babylon进行解析 ==》 得到AST
+==》 plugin用babel-traverse对AST树进行遍历转译 ==》 得到新的AST树
+==》 用babel-generator通过AST树生成ES5代码
+
+[详解](https://www.jianshu.com/p/e9b94b2d52e2)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>7. webpack热更新原理以及webpack优化打包速度和优化性能?</summary></b>
+答案：
+[详解](https://www.cnblogs.com/gaoht/p/11310365.html)
+
+公司：顺丰科技、阿里
+</details>
+
+<b><details><summary>8. webpack相关问题?</summary></b>
+问题：
+- webpack
+  - 单独将代码库(如antd)打扮成一个js文件？
+    - 打包时，会将antd打扮成几个文件?
+  - 如何按需打包代码(只打包已改动的和相关的代码包)
+  - 多页面应用打包?
+    - 多页面应用的依赖管理
+  - ssr和spa的混合打包问题
+  - 分模块打包
+
+公司：腾讯、抖音
+</details>
