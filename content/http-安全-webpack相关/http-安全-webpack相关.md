@@ -107,3 +107,13 @@
 
 公司：顺丰科技
 </details>
+
+<b><details><summary>13. .token被攻击者已经拿到了，用来发请求，怎么避免这种攻击</summary></b>
+答案：
+
+* 在存储的时候把 token 进行对称加密存储，用时解开。
+* 将请求 URL、时间戳、token 三者进行合并加盐签名，服务端校验有效性。
+* HTTPS 对 URL 进行判断
+
+公司：腾讯
+</details>
