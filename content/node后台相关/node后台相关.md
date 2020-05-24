@@ -1,0 +1,49 @@
+# [返回主页](https://github.com/evenMai92/front-end-interview/blob/master/README.md)
+
+<b><details><summary>1. nginx实现同一ip和端口下，多个网址网站:**nginx vhost**?</summary></b>
+答案：
+
+公司：腾讯云
+</details>
+
+<b><details><summary>2. express和koa中间件原理?</summary></b>
+答案：
+
+[中间件原理](http://www.imooc.com/article/details/id/280772)
+
+[常见中间件实现](https://juejin.im/post/5ba7868e6fb9a05cdf309292)
+公司：腾讯云
+</details>
+
+<b><details><summary>3. node唤起子进程的方式有哪些?</summary></b>
+答案：
+[详解](https://www.cnblogs.com/rubyxie/articles/8949417.html)
+
+公司：有赞云
+</details>
+
+<b><details><summary>4. 数据库索引种类和原理?</summary></b>
+答案：
+[详解](https://www.jianshu.com/p/e1dce41a6b2b)
+
+公司：有赞云
+</details>
+
+<b><details><summary>5. node性能优化和异常监控?</summary></b>
+答案：
+
+[性能优化](https://segmentfault.com/a/1190000012414666)
+
+[异常监控1](https://zhuanlan.zhihu.com/p/32709628)
+
+[异常监控2](https://shanyue.tech/post/server-structed-error.html#%E5%BC%82%E5%B8%B8%E6%94%B6%E9%9B%86)
+
+公司：腾讯音乐
+</details>
+
+<b><details><summary>6. node rpc原理?</summary></b>
+答案：
+[详解](https://www.yuque.com/egg/nodejs/dklip5#dl4qug)
+
+公司：有赞云
+</details>

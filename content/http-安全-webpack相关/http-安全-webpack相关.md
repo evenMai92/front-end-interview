@@ -79,7 +79,7 @@
 <b><details><summary>9. http状态码301与307的区别?</summary></b>
 问题：[详解](https://www.wanghuiblog.com/post/301-302-307-redirection/)
 
-公司：腾讯
+公司：腾讯音乐
 </details>
 
 <b><details><summary>10. 从输入URL到页面加载发生了什么?</summary></b>
