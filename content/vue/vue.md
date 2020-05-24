@@ -400,10 +400,13 @@ mounted(){
 </details>
 
 <b><details><summary>26. 作用域插槽的使用</summary></b>
-
-答案：
-
-[详解](https://cn.vuejs.org/v2/guide/components-slots.html#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD)
+答案：[详解](https://cn.vuejs.org/v2/guide/components-slots.html#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD)
 
 公司：腾讯
+</details>
+
+<b><details><summary>27. 对MVVM框架的理解</summary></b>
+答案：[详解](https://blog.csdn.net/jia12216/article/details/55520426)
+
+公司：顺丰科技
 </details>

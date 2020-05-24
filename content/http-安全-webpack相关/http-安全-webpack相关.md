@@ -75,3 +75,35 @@
 
 公司：腾讯、抖音
 </details>
+
+<b><details><summary>9. http状态码301与307的区别?</summary></b>
+问题：[详解](https://www.wanghuiblog.com/post/301-302-307-redirection/)
+
+公司：腾讯
+</details>
+
+<b><details><summary>10. 从输入URL到页面加载发生了什么?</summary></b>
+答案：[详解](https://segmentfault.com/a/1190000006879700)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>11. http三次握手与四次挥手</summary></b>
+答案：[详解](https://baijiahao.baidu.com/s?id=1654225744653405133&wfr=spider&for=pc)
+
+公司：顺丰科技
+</details>
+
+<b><details><summary>12. web性能优化</summary></b>
+答案：
+
+[重排与重绘](https://mp.weixin.qq.com/s/BboZ5wxNaXXjpAFignOYdw)
+
+[加载技术](https://www.jianshu.com/p/ba9759384ecf)
+
+[白屏优化](https://segmentfault.com/a/1190000020383064?utm_source=tag-newest)
+
+[更多](https://zhuanlan.zhihu.com/p/39878259)
+
+公司：顺丰科技
+</details>
