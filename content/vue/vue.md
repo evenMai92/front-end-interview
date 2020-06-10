@@ -410,3 +410,15 @@ mounted(){
 
 公司：顺丰科技
 </details>
+
+<b><details><summary>28. mixin主要用途</summary></b>
+答案：[详解](https://www.cnblogs.com/zjw2004112/p/12513045.html)
+
+公司：腾讯
+</details>
+
+<b><details><summary>29. mixin里面的生命周期与组件内的生命周期执行顺序？mixin里面的方法或数据与组件内的相同时，vue时怎么解决的？</summary></b>
+答案：[详解](https://cn.vuejs.org/v2/guide/mixins.html)
+
+公司：腾讯
+</details>
