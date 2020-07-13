@@ -53,3 +53,15 @@
 
 公司：腾讯
 </details>
+
+<b><details><summary>8. 什么是正向代理和反向代理?</summary></b>
+答案：[详解](https://www.zhihu.com/question/24723688)
+
+公司：腾讯微视
+</details>
+
+<b><details><summary>9. 负载均衡相关?</summary></b>
+答案：[详解](https://baijiahao.baidu.com/s?id=1634386941492502616&wfr=spider&for=pc)
+
+公司：腾讯微视
+</details>

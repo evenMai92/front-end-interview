@@ -123,3 +123,21 @@
 
 公司：腾讯
 </details>
+
+<b><details><summary>15. http keep-alive什么时候关闭？</summary></b>
+答案：[详解](https://blog.51cto.com/yangsj/1788301)
+
+公司：腾讯微视
+</details>
+
+<b><details><summary>16. 怎么判断页面被劫持以及防御？</summary></b>
+答案：[详解](https://zhuanlan.zhihu.com/p/32059056)
+
+公司：腾讯微视
+</details>
+
+<b><details><summary>17. http get可以传请求体吗？</summary></b>
+答案：[详解](https://www.jianshu.com/p/c025273d78db)
+
+公司：腾讯微视
+</details>

@@ -253,3 +253,15 @@ Credentials有三种参数：same-origin，include，*
 
 公司：腾讯
 </details>
+
+<b><details><summary>22. 模块化方式有哪些?</summary></b>
+答案： [详解](https://zhuanlan.zhihu.com/p/50555381)
+
+公司：腾讯微视
+</details>
+
+<b><details><summary>23. 怎么做大文件上传?</summary></b>
+答案： [详解](https://zhuanlan.zhihu.com/p/68271019)
+
+公司：腾讯微视
+</details>
