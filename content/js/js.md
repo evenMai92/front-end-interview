@@ -265,3 +265,9 @@ Credentials有三种参数：same-origin，include，*
 
 公司：腾讯微视
 </details>
+
+<b><details><summary>24. 怎么实现单例模式?</summary></b>
+答案： [详解](https://www.cnblogs.com/imwtr/p/9451129.html)
+
+公司：腾讯微视
+</details>
