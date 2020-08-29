@@ -2,8 +2,9 @@
 
 <b><details><summary>1. Object.__proto__值为什么?</summary></b>
 答案：
-
+```javascript
 Object.__proto__ = Function.prototype;
+```
 
 ![原型](../images/原型.png)
 
@@ -21,11 +22,11 @@ Object.__proto__ = Function.prototype;
 * splice()
 * sort()
 * reverse()
-* forEach()
 * copyWithin(es6新增)
 * fill(es6新增)
 
 2. 不改变原始数组
+* forEach()
 * filter()
 * concat() 
 * slice()
@@ -55,7 +56,7 @@ Object.__proto__ = Function.prototype;
 
 * Canvas 通过 JavaScript 来绘制 2D 图形。
 * Canvas 是逐像素进行渲染的。
-* 在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。
+* 在 Canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。
 
 公司：金蝶科技
 </details>
@@ -191,7 +192,7 @@ FileReader.readAsText()
 <b><details><summary>16. axios原理，以及ajax和fetch的区别?</summary></b>
 答案：
 ```javascript
-// 适配器，客户端用xhr,服务端用http
+// axios适配器，客户端用xhr,服务端用http
 function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
