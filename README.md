@@ -50,4 +50,5 @@
 
 <b><details><summary>学习笔记</summary></b>
 * [react](./content/note/react相关.md)
+* [算法相关](./content/note/算法相关.md)
 </details>
