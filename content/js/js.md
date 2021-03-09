@@ -138,7 +138,7 @@ FileReader.readAsText()
 
 <b><details><summary>10. js垃圾回收机制</summary></b>
 答案：
-[详解](https://segmentfault.com/a/1190000018605776?utm_source=tag-newest)
+[详解](https://github.com/evenMai92/front-end-interview/issues/7)
 
 公司：腾讯
 </details>
