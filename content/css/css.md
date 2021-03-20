@@ -89,3 +89,8 @@
 
 公司：字节跳动
 </details>
+
+<b><details><summary>14. 伪类和伪元素的区别?</summary></b>
+答案：[详解](https://www.cnblogs.com/ihardcoder/p/5294927.html)
+
+</details>

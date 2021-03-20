@@ -108,3 +108,15 @@
 <b><details><summary>15. hooks原理？</summary></b>
 答案：[详解](https://www.jianshu.com/p/b9ac8fa849f1)
 </details>
+
+<b><details><summary>16. 实现一个antd modal组件？</summary></b>
+答案：[详解](https://segmentfault.com/a/1190000021755781)
+
+公司：字节
+</details>
+
+<b><details><summary>17. 实现redux的connect？</summary></b>
+答案：[详解](https://blog.csdn.net/c_kite/article/details/79018469)
+
+公司：字节
+</details>

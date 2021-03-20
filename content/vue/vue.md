@@ -394,7 +394,7 @@ mounted(){
 
 <b><details><summary>26. vue怎么做页面权限控制？</summary></b>
 
-答案：利用 vue-router 的 全局钩子beforeEach或路由钩子beforeRouteEnter，可以在跳转页面前判断用户的权限（利用权限菜单列表），是否能够进入此页面，如果不能则提示错误或重定向到上一个页面。
+答案：利用 vue-router 的 全局钩子beforeEach或组件钩子beforeRouteEnter，可以在跳转页面前判断用户的权限（利用权限菜单列表），是否能够进入此页面，如果不能则提示错误或重定向到上一个页面。
 
 公司：顺丰科技
 </details>
