@@ -422,3 +422,9 @@ mounted(){
 
 公司：腾讯
 </details>
+
+<b><details><summary>30. vue style标签上的scoped作用与原理</summary></b>
+答案：[详解](https://segmentfault.com/a/1190000017508285)
+
+公司：
+</details>
