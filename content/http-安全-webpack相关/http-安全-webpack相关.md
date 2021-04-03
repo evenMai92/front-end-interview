@@ -167,7 +167,9 @@
 </details>
 
 <b><details><summary>22. 小程序的架构及为什么不推荐多次触发setData？</summary></b>
-答案：[详解](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tips.html)
+答案：
+[架构讨论](https://www.zhihu.com/question/446103629/answer/1801809960)
+[setData问题](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tips.html)
 
 公司：腾讯
 </details>
