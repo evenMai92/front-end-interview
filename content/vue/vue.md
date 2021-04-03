@@ -1,5 +1,5 @@
 # [返回主页](https://github.com/evenMai92/front-end-interview/blob/master/README.md)
-### [vue相关源码解析](https://ustbhuangyi.github.io/vue-analysis/)
+### [vue相关源码解析](https://github.com/ustbhuangyi/vue-analysis)
 
 <b><details><summary>1. Vue的实例和组件为什么data书写不一样</summary></b>
 答案：
