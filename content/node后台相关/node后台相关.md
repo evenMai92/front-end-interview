@@ -60,8 +60,9 @@
 公司：腾讯微视
 </details>
 
-<b><details><summary>9. 负载均衡相关?</summary></b>
-答案：[详解](https://baijiahao.baidu.com/s?id=1634386941492502616&wfr=spider&for=pc)
+<b><details><summary>9. 负载均衡及其相关算法?</summary></b>
+答案：[详解一](https://baijiahao.baidu.com/s?id=1634386941492502616&wfr=spider&for=pc)
+[详解二](https://www.jianshu.com/p/253790f4aa20)
 
-公司：腾讯微视
+公司：腾讯微视，腾讯教育
 </details>

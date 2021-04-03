@@ -153,3 +153,21 @@
 
 公司：腾讯微保
 </details>
+
+<b><details><summary>20. HTTP2新增特性及头部压缩怎么实现？</summary></b>
+答案：
+
+公司：联想
+</details>
+
+<b><details><summary>21. websocket握手过程？</summary></b>
+答案：
+
+公司：腾讯
+</details>
+
+<b><details><summary>22. 小程序的架构及为什么不推荐多次触发setData？</summary></b>
+答案：
+
+公司：腾讯
+</details>
