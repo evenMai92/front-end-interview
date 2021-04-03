@@ -155,7 +155,7 @@
 </details>
 
 <b><details><summary>20. HTTP2新增特性及头部压缩怎么实现？</summary></b>
-答案：
+答案：[详解头部压缩](https://www.cnblogs.com/cangqinglang/p/12629087.html)
 
 公司：联想
 </details>
