@@ -2,7 +2,8 @@
 
 <b><details><summary>1. css属性实现动画性能对比（left,top,transform等）?</summary></b>
 答案：
-[详解](https://segmentfault.com/a/1190000010254851)
+[详解一](https://segmentfault.com/a/1190000010254851)
+[详解二](https://www.cnblogs.com/ypppt/p/13324192.html)
 
 公司：腾讯TEG
 </details>

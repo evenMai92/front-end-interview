@@ -161,13 +161,13 @@
 </details>
 
 <b><details><summary>21. websocket握手过程？</summary></b>
-答案：
+答案：[详解](https://blog.csdn.net/yournevermore/article/details/103067079)
 
 公司：腾讯
 </details>
 
 <b><details><summary>22. 小程序的架构及为什么不推荐多次触发setData？</summary></b>
-答案：
+答案：[详解](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tips.html)
 
 公司：腾讯
 </details>
