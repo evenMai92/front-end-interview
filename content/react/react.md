@@ -120,3 +120,15 @@
 
 公司：字节
 </details>
+
+<b><details><summary>18. 为什么react 函数式组件会渲染两次？</summary></b>
+答案：[详解](https://www.zhihu.com/question/387196401)
+
+公司：顺丰
+</details>
+
+<b><details><summary>19. react中怎样实现vue的keep-alive？？</summary></b>
+答案：[详解一](https://www.zhihu.com/question/264885768) [详解二](https://blog.csdn.net/petertanjinjie/article/details/107398782)
+
+公司：顺丰
+</details>

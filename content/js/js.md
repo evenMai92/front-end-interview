@@ -298,3 +298,9 @@ Credentials有三种参数：same-origin，include，*
 
 公司：字节
 </details>
+
+<b><details><summary>26. async和defer实现原理?</summary></b>
+答案：
+
+公司：顺丰
+</details>

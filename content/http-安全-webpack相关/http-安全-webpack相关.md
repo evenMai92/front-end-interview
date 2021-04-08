@@ -169,7 +169,20 @@
 <b><details><summary>22. 小程序的架构及为什么不推荐多次触发setData？</summary></b>
 答案：
 [架构讨论](https://www.zhihu.com/question/446103629/answer/1801809960)
+[架构设计](https://www.cnblogs.com/wonyun/p/11168698.html)
 [setData问题](https://developers.weixin.qq.com/miniprogram/dev/framework/performance/tips.html)
 
 公司：腾讯
+</details>
+
+<b><details><summary>23. dns是基于哪个协议？</summary></b>
+答案：[详解](https://www.cnblogs.com/lsgxeva/p/8321192.html)
+
+公司：腾讯
+</details>
+
+<b><details><summary>24. 怎么避免index.html缓存？</summary></b>
+答案：[详解](https://www.jianshu.com/p/eaad6e4757e5)
+
+公司：顺丰
 </details>
