@@ -310,3 +310,9 @@ Credentials有三种参数：same-origin，include，*
 
 公司：元戎启行
 </details>
+
+<b><details><summary>28. requestAnimationFrame的执行时机?</summary></b>
+答案：[详解](https://github.com/ginobilee/blog/issues/6)
+
+公司：联想
+</details>
