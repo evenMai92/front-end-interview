@@ -70,3 +70,15 @@
 
 公司：腾讯微视，腾讯教育，顺丰
 </details>
+
+<b><details><summary>10. node事件循环跟浏览器有什么区别，以及下面的输出为什么会出现两种情况?</summary></b>
+```
+setTimeout(() => console.log(1), 0);
+setImmediate(() => console.log(2));
+
+1 2 或者 2 1
+```
+答案：[详解](https://segmentfault.com/a/1190000013861128)
+
+公司：元戎启行
+</details>

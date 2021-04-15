@@ -186,3 +186,9 @@
 
 公司：顺丰
 </details>
+
+<b><details><summary>25. webpack怎么处理循环引用的模块？</summary></b>
+答案：[详解](https://www.yuque.com/u1113084/dsregg/nolwsb)
+
+公司：元戎启行
+</details>

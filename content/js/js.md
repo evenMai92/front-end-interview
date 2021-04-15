@@ -304,3 +304,9 @@ Credentials有三种参数：same-origin，include，*
 
 公司：顺丰
 </details>
+
+<b><details><summary>27. axios怎么实现中断请求的?</summary></b>
+答案：[详解](https://blog.csdn.net/lovefive5/article/details/107286325/)
+
+公司：元戎启行
+</details>
