@@ -121,7 +121,7 @@
 <b><details><summary>14. https加密方式</summary></b>
 答案：[详解](https://segmentfault.com/a/1190000019687184)
 
-公司：腾讯
+公司：腾讯，字节
 </details>
 
 <b><details><summary>15. http keep-alive什么时候关闭？</summary></b>
@@ -191,4 +191,22 @@
 答案：[详解](https://www.yuque.com/u1113084/dsregg/nolwsb)
 
 公司：元戎启行
+</details>
+
+<b><details><summary>26. tcp怎么处理错包和乱包问题？</summary></b>
+答案：[详解](http://cache.baiducontent.com/c?m=HZ25Jld2I8KK5Acz8MvBclTef4XhlqFYo6EkG3J1xou1Fcw6wAJEp_y6YmQuq8LDaaMoIc3a-9f6qKQJskjg6yU98IX0mcyvb0CiSCNsldJRdMmIdrXf54MrP9Jy3xYbPo_nmFtX7k-J3LWkpEEysWXI4I6d3qGpnn-C2Pb_h37R4GYt4JsbASUesCuPTBOwk72FD5SGEtDm9U4klvHZ0_&p=c0759a44d58717f60da2c7710f48&newp=882a94469c9f02fc57ef8868110092695d0fc20e3bd3db01298ffe0cc4241a1a1a3aecbf2c251604d8cf7b6404a84e5ceef033763d0034f1f689df08d2ecce7e65d464&s=cfcd208495d565ef&user=baidu&fm=sc&query=tcp%D4%F5%C3%B4%BB%E1%D3%F6%B5%BD%B4%ED%B0%FC%C2%F0&qid=b6224cbe002d2443&p1=10)
+
+公司：字节
+</details>
+
+<b><details><summary>27. tcp怎么保证稳定可靠？</summary></b>
+答案：[详解](https://blog.csdn.net/mulinsen77/article/details/88924907)
+
+公司：字节
+</details>
+
+<b><details><summary>28. protobuf为什么能实现性能提升？</summary></b>
+答案：[详解](hhttps://blog.csdn.net/qq_35448165/article/details/99473027)
+
+公司：字节
 </details>
