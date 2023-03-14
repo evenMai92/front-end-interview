@@ -78,7 +78,7 @@ setImmediate(() => console.log(2));
 
 1 2 或者 2 1
 ```
-答案：[详解](https://segmentfault.com/a/1190000013861128)
+答案：[详解1](https://blog.csdn.net/u012138854/article/details/112926003) [详解2](https://segmentfault.com/a/1190000013861128) 
 
 公司：元戎启行
 </details>
